@@ -1,0 +1,34 @@
+{
+  "name": "callbag-behavior-subject",
+  "version": "1.0.0",
+  "description": "A callbag subject (listener, sink) that repeats its last value on connection.",
+  "main": "index.js",
+  "scripts": {
+    "test": "tape index.spec.js"
+  },
+  "author": "Zebulon Young (zebulonj@gmail.com)",
+  "license": "MIT",
+  "keywords": [
+    "callbag",
+    "rx"
+  ],
+  "files": [
+    "README.md",
+    "index.js"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "tape": "^4.8.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/zebulonj/callbag-behavior-subject.git"
+  },
+  "bugs": {
+    "url": "https://github.com/zebulonj/callbag-behavior-subject/issues"
+  },
+  "homepage": "https://github.com/zebulonj/callbag-behavior-subject#readme"
+}
