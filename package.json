@@ -1,6 +1,6 @@
 {
   "name": "callbag-behavior-subject",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A callbag subject (listener, sink) that repeats its last value on connection.",
   "main": "index.js",
   "scripts": {

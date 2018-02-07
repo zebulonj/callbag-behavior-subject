@@ -16,6 +16,10 @@ function makeBehaviorSubject( initial ) {
       data( 1, last );
     }
     else {
+      if ( type === 1 ) {
+        last = data;
+      }
+
       for ( let i = 0, n = sinks.length; i < n; i++ ) {
         sinks[i]( type, data );
       }
