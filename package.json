@@ -2,9 +2,13 @@
   "name": "callbag-behavior-subject",
   "version": "1.1.0",
   "description": "A callbag subject (listener, sink) that repeats its last value on connection.",
-  "main": "index.js",
+  "main": "index.cjs.js",
+  "module": "index.js",
   "scripts": {
-    "test": "tape index.spec.js"
+    "build": "rollup $npm_package_module -o $npm_package_main --f cjs",
+    "pretest": "npm run build",
+    "test": "tape index.spec.js",
+    "prepare": "npm test"
   },
   "author": "Zebulon Young (zebulonj@gmail.com)",
   "license": "MIT",
@@ -14,6 +18,7 @@
   ],
   "files": [
     "README.md",
+    "index.cjs.js",
     "index.js"
   ],
   "publishConfig": {
@@ -21,6 +26,7 @@
   },
   "dependencies": {},
   "devDependencies": {
+    "rollup": "^0.67.0",
     "tape": "^4.8.0"
   },
   "repository": {
