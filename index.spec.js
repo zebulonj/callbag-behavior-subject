@@ -1,6 +1,6 @@
 const test = require( 'tape' );
 
-const makeBehaviorSubject = require( './index' );
+const makeBehaviorSubject = require( '.' );
 
 test( "Should broadcast initial value on connection, if not updated.", assert => {
   assert.plan( 2 );

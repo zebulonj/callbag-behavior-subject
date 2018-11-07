@@ -45,4 +45,4 @@ function makeBehaviorSubject( initial ) {
   }
 }
 
-module.exports = makeBehaviorSubject;
+export default makeBehaviorSubject;
